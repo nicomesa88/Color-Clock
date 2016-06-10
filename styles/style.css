@@ -1,3 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  background-image:  radial-gradient(circle at center , lightblue 20%, darkblue 100%);
 }
