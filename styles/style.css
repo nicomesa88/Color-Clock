@@ -15,6 +15,7 @@ body {
     background-image:  radial-gradient(circle at center , lightblue 20%, darkblue 100%)
 }
 
+
 #clock {
     font-size: 70px;
     line-height: 70px;
@@ -25,5 +26,5 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
-
