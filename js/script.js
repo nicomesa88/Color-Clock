@@ -31,9 +31,7 @@ var line = document.querySelector("#line")
 
 var timer = setInterval(function() {
   line.style.width = ( width += 10 ) + "px"
-  // at 350px, line shrinks back to 0
   if ( width === 500 ) {
     width = 0
-    // clearInterval( timer )
   }
 }, 1000)
