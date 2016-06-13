@@ -12,7 +12,7 @@ var startClock = function() {
     document.querySelector("#clock").innerHTML = h + ":" + m + ":" + s
     setTimeout(startClock, 1000)
     var overlay2 = document.querySelector("#overlay")
-    var backgroundHex = '#' + hours * 4 + minutes * 4 + seconds * 4
+    var backgroundHex = '#' + hours + minutes + seconds
     overlay2.style.background = backgroundHex
     var hexContainer = document.querySelector("#hexNumb")
     hexContainer.innerHTML = backgroundHex
@@ -30,7 +30,7 @@ var line = document.querySelector("#line")
     width = 0
 
 var timer = setInterval(function() {
-  line.style.width = ( width += 10 ) + "px"
+  line.style.width = ( width += 5 ) + "px"
   if ( width === 500 ) {
     width = 0
   }
